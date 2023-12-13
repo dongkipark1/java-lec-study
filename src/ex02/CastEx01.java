@@ -7,7 +7,9 @@ public class CastEx01 {
 
         n1 = 2;
 
-        d1 = n1; // 묵시적 형변환 4칸에도 2 8칸에도 2 이것을 CAST했다고 함
+        d1 = n1; // 묵시적 형변환 4칸에도 2 8칸에도 2 이것을 CAST했다고 함(업캐스팅)
         System.out.println(d1);
+        n1 = (int) d1; // 다운캐스팅
+        System.out.println(n1);
     }
 }
