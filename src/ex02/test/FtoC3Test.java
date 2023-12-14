@@ -7,7 +7,7 @@ public class FtoC3Test {
         System.out.println("2. 섭씨->화씨");
         System.out.println("=============================");
         System.out.println();//내려쓰기
-        System.out.println("번호를 선택하시오: 1");
+        System.out.println("번호를 선택하시오: ");
         System.out.println("화씨온도를 입력하시오: 100.0");
         System.out.println("섭씨온도를 입력하시오: 37.77");
     } //기본기가 중요
