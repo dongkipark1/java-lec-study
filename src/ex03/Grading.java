@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Grading {
     public static void main(String[] args) {
-        int grade;
+        double grade;
 
         Scanner sc = new Scanner(System.in);
         System.out.print("성적을 입력하시오: ");
-        grade = sc.nextInt();
+        grade = sc.nextDouble();
         if (grade >= 95){
             System.out.println("학점 A+");
         } else if (grade >= 90){

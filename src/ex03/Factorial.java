@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Factorial {
     public static void main(String[] args) {
-        long fact = 10;
+        long fact = 1;
         int n;
 
         System.out.print("정수를 입력하시오: ");
