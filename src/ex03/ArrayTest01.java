@@ -5,8 +5,8 @@ public class ArrayTest01 {
 
         int[] arr = new int[10];
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = i;
+        for (int a = 0; a < arr.length; a++) {
+            arr[a] = a;
 
         }
         for (int i = 0; i < arr.length; i++) {
