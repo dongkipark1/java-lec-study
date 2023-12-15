@@ -4,21 +4,64 @@ public class BubbleTest05 {
         int N = arr.length;
 
         int temp;
-
+        System.out.println("1회전");
         for (int i = 0; i < N - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
+            for (int j = 0; j < N; j++) {
+                System.out.print(arr[j] + " ");
+                if (arr[i] > arr[i + 1]) {
+                    temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                }
+
             }
+            System.out.println();
         }
-        //1회전
-        for (int i = 0; i < N; i++) {
-            System.out.print(arr[i] + " ");
+        System.out.println("2회전");
+        for (int i = 0; i < N - 2; i++) {
+            for (int j = 0; j < N; j++) {
+                System.out.print(arr[j] + " ");
+                if (arr[i] > arr[i + 1]) {
+                    temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                }
+
+            }
+            System.out.println();
+        }
+        System.out.println("3회전");
+
+        for (int i = 0; i < N - 3; i++) {
+            for (int j = 0; j < N; j++) {
+                System.out.print(arr[j] + " ");
+                if (arr[i] > arr[i + 1]) {
+                    temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                }
+
+
+            }
+            System.out.println();
+        }
+        System.out.println("4회전");
+
+        for (int i = 0; i < N - 4; i++) {
+            for (int j = 0; j < N; j++) {
+                System.out.print(arr[j] + " ");
+                if (arr[i] > arr[i + 1]) {
+                    temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                }
+
+
+            }
+            System.out.println();
         }
     }
 }
-
 
 
 
