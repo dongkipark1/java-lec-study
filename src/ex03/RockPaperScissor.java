@@ -9,12 +9,14 @@ public class RockPaperScissor {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("가위(0), 바위(1), 보(2)");
         int user = sc.nextInt();
 
         int com = (int) (Math.random() * 3);
         if (user == com){
             System.out.println("플레이어와 컴퓨터가 비겼음");
+
         } else if (user == (com + 1) % 3) {
             System.out.println("플레이어: " + user + "컴퓨터: " + com + "   플레이어 승리");
         } else {
