@@ -6,7 +6,7 @@ public class BubbleTest06 {
 
         final int N = arr.length;
 
-        int temp;
+        int temp; //SWAP코드
 
         for (int loop = 1; loop < 5; loop++) {
             for (int i = 0; i < N - loop; i++) {
