@@ -1,8 +1,7 @@
 package ex03;
 
 public class BubbleEx01 {
-
-
+    
     static void bubble(int[] arr) { //매서드 : 행위
         final int N = arr.length;
 
