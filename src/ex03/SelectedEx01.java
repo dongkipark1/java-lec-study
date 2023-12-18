@@ -4,25 +4,30 @@ public class SelectedEx01 {
     public static void main(String[] args) {
         int[] arr = {5, 8, 2, 4, 3};
         final int N = arr.length;
+        int rep;
+        int min;
 
-        for (int i = 0; i < N - 1; i++) {
-            int minIndex = i;
+        for (int j = 0; j < N - 1; j++) {
+            rep = j;
+            min = rep;
 
-            for (int j = i + 1; j < N; j++) {
-                if (arr[j] < arr[minIndex]) {
-                    minIndex = j;
+            for (int i = rep + 1; i < N; i++) {
+
+                if (arr[min] > arr[i]) { // 5, 8, 2, 4, 3
+                    min = i;
                 }
             }
 
-            if (minIndex != i) {
-                int temp = arr[i];
-                arr[i] = arr[minIndex];
-                arr[minIndex] = temp;
+
+            if (rep != min) {
+                int temp = arr[rep]; // temp = 5
+                arr[rep] = arr[min]; // min에 rep를 넣는다
+                arr[min] = temp;
             }
         }
-
-        for (int v : arr) {
+        
+        for (int v : arr) { // for which 전체 출력
             System.out.print(v + " ");
         }
-    }
+    }// end main
 }
