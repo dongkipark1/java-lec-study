@@ -6,8 +6,8 @@ public class ScopeEx01 { //ScopeEx01.m1 가능하기도 하고 ScopeEx01 생략 
     static int n2 = 2;
 
     static void m1() { //호출하기 전에는 메인 시작전 호출
-        int n1 = 10;// 열리지 않는다
-        System.out.println("m1: " + n1); //Queue의 크기 : 2
+        int n5 = 10;// 열리지 않는다
+        System.out.println("m1: " + n5); //Queue의 크기 : 2
     }
 
     void m2() {
@@ -19,5 +19,8 @@ public class ScopeEx01 { //ScopeEx01.m1 가능하기도 하고 ScopeEx01 생략 
         System.out.println(1);
         m1();
         System.out.println(2);
+        ScopeEx01 sc = new ScopeEx01();
+        System.out.println(sc.n1);
+        sc.m2();
     }
 }
