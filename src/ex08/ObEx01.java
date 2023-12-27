@@ -35,7 +35,7 @@ public class ObEx01 {
             System.out.println("같아요?"); // 실행값은 같다 나오지 않는다
         }
 
-        //account -> equals() (오브젝트) : 주소비교
+        //account. -> equals() (오브젝트) : 주소비교
         //account.toString(). -> equals() : 주소비교 and 값비교
         if (account.toString().equals(account2.toString())) {
             System.out.println("같아요?");
