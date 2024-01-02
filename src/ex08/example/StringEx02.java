@@ -16,8 +16,8 @@ public class StringEx02 {
 
             // username값과, password값 찾아보기
 
-            String username = null;
-            String password = null;
+            String username = "";
+            String password = "";
 
             for (String query : queries) {
                 String[] keyValue = query.split("=");
