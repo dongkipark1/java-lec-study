@@ -1,4 +1,4 @@
-package ex13.example5;
+package ex13.example4;
 
 
 class Model<T> {
