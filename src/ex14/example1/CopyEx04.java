@@ -38,7 +38,7 @@ public class CopyEx04 {
         User u1 = new User(1, "ssar", "0102222");
 
         //1. 통째로 복사
-        User u2 = new User(u1.getId(), u1.getName(), u1.getName());
+        User u2 = new User(u1.getId(), u1.getName(), u1.getTel());
 
         //2. 부분변경 복사
         User u3 = new User(u1.getId(), u1.getName(), "0103333");
